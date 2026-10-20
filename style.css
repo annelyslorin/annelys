@@ -1,0 +1,87 @@
+/* Couleurs, polices et balises de base. */
+body {
+  background-color: #f6eee5;
+  color: #343b3b;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+h1 { color: #993f2c; font-size: 43px; margin: 15px 0; }
+h2 { color: #226d70; font-size: 32px; margin: 10px 0 22px; }
+p { margin: 18px 0; }
+strong { color: #253b3c; }
+a { text-decoration: none; color: #226d70; font-weight: bold; }
+a:hover { color: #993f2c; }
+
+/* Conteneur centré, comme dans le cours. */
+.container { width: 700px; margin: 48px auto 28px; }
+.card-white {
+  background-color: #fffdf9;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(70, 45, 30, 0.07);
+}
+.text-center { text-align: center; }
+.card-terracotta { border-left: 7px solid #b85c43; }
+.card-turquoise { border-left: 7px solid #3faaa8; background-color: #e5f3ef; }
+
+/* Photo ronde : l’image est affichée comme un fond pour la cadrer
+   avec background-size: cover, vu dans la partie bannières. */
+.img-circle {
+  border-radius: 50%;
+  background-image: url("images/anne-lys.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-left: 160px;
+  width: 0;
+  border: 6px solid #dcefed;
+}
+.eyebrow { font-size: 11px; font-weight: bold; letter-spacing: 2px; color: #795440; margin: 0 0 20px; }
+.hello { color: #359b9b; }
+.tagline { font-family: Georgia, serif; font-size: 23px; font-style: italic; color: #226d70; margin-bottom: 28px; }
+.small-note { color: #71645a; font-size: 13px; }
+.punchline { font-family: Georgia, serif; font-style: italic; color: #7d4937; font-size: 18px; margin-bottom: 0; }
+.btn-terracotta {
+  display: inline-block;
+  background-color: #a84832;
+  color: white;
+  border-radius: 5px;
+  padding: 13px 20px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.btn-terracotta:hover { background-color: #226d70; color: white; }
+.button-caption { color: #71645a; font-size: 12px; margin: 12px 0 0; }
+.list-inline { list-style: none; padding-left: 0; }
+.list-inline > li { display: inline; padding: 0 10px; }
+.list-inline a { font-size: 20px; }
+.social-handle { font-size: 14px; font-weight: normal; }
+.footer-note { font-size: 12px; color: #71645a; }
+#introduction { border-top: 7px solid #3faaa8; }
+#social-links { border-top: 3px solid #b85c43; }
+
+/* Media queries : une colonne lisible sur tablette et mobile. */
+@media (max-width: 760px) {
+  .container { width: 540px; margin: 25px auto; }
+  .card-white { padding: 30px; }
+  h1 { font-size: 36px; }
+}
+@media (max-width: 580px) {
+  .container { width: 90%; }
+  .card-white { padding: 25px 22px; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  body { font-size: 16px; }
+  .eyebrow { letter-spacing: 1px; }
+  .tagline { font-size: 21px; }
+  .social-handle { display: block; }
+}
